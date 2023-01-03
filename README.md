@@ -1,5 +1,3 @@
-# My Adventure Blog
-In 2015 I started working in Disney World in the Disney College Program. I created a wordpress blog to talk about my time working for Disney. After I quit Disney, I took part in Tech Elevator's full stack Java bootcamp, where we were taught Vue.js for the front end. I wanted to teach myself React.js, so I have recreated my Disney blog here in react. 
 <svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
