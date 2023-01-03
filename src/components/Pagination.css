@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pagination li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+.pagination button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+.pagination .page-link:hover {
+    text-decoration: underline;
+}
+.pagination .active {
+    scale: 1.5;
+}
+.pagination .previous,
+.pagination .next {
+    background-color: var(--brown);
+    color: var(--yellow);
+    padding: 5px;
+    border-radius: 5px;
+}

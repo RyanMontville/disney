@@ -1,0 +1,37 @@
+.image {
+    width: 100%;
+}
+.post-container p {
+    padding: 5px 0;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px
+}
+.gallery {
+    height: 150px;
+    display: inline-block;
+    margin: 5px 10px;
+    position: relative
+}
+.full {
+    width: 100%;
+    height: auto;
+    position: relative
+}
+.half {
+    flex-basis: 50%;
+    width: 20vw;
+    height: auto;
+    position: relative
+}
+.medium {
+    height: 300px;
+}
+.read-more {
+    text-align: right;
+    display: block;
+}
