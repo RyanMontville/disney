@@ -2,7 +2,6 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import postData from "./data/db.json";
-//import { Home, DCP15, DCP16, NoPage, SinglePost} from "./pages";
 
 import Home from "./pages/Home";
 import DCP15 from "./pages/DCP15";
