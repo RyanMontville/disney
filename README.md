@@ -9,6 +9,7 @@ In 2015 I started working in Disney World in the Disney College Program. I creat
 <img src="https://github.com/RyanMontville/my-adventure-blog/blob/main/screenshots/viewing-filtered-post-from-search-input.png" alt="search-results" title="Viewing filtered posts from search input" style="width: 30%; display: inline-block;"></img>
 <img src="https://github.com/RyanMontville/my-adventure-blog/blob/main/screenshots/viewing-a-single-post.png" alt="single-post"  title="A single post" style="width: 30%; display: inline-block;"></img>
 </div>
-</div>
 
 </foreignObject>
+
+</div>
