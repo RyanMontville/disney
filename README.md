@@ -4,6 +4,7 @@ In 2015 I started working in Disney World in the Disney College Program. I creat
     div {
         display: flex;
         justify-content: center;
+        flex-direction: row;
         align-items: flex-start;
     }
 </style>
