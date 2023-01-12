@@ -52,7 +52,7 @@ function App() {
                 <Route path="*" element={<NoPage />} />
             </Routes>
             <footer>
-                This website was created with React.js
+                My Adventure Blog was created with React.js
             </footer>
             <ScrollToTop smooth className='scroll-to-top' />
         </HashRouter>
