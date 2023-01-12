@@ -1,7 +1,7 @@
 import './App.css';
-import React from 'react';
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import postData from "./data/db.json";
+import { useState } from 'react';
+import { HashRouter, Link, Route, Routes } from "react-router-dom";
+import { db } from "./data/db.js";
 
 import Home from "./pages/Home";
 import DCP15 from "./pages/DCP15";
@@ -10,24 +10,21 @@ import NoPage from "./pages/NoPage";
 import SinglePost from './pages/SinglePost';
 import ScrollToTop from "react-scroll-to-top";
 
-class App extends React.Component {
-    state = {
-        posts: postData.posts,
-        searchInput: ""
-    }
+import badge from "./images/badges/badge.png";
 
-    handleChange = (e) => {
-        this.setState({
-            searchInput: e.target.value,
-        })
+function App() {
+    const [posts] = useState(db);
+    const [searchInput, setSearchInput] = useState("");
+
+    function handleChange(e) {
+        setSearchInput(e.target.value)
     };
 
-    render() {
-        return <BrowserRouter>
+        return <HashRouter>
             <header>
                 <section id="site-title">
                     <div>
-                        <Link to="/" className="title-link"><img src="/assets/badges/badge.png" alt="badge" /></Link>
+                        <Link to="/" className="title-link"><img src={badge} alt="badge" /></Link>
                     </div>
                     <div className="site-title-text">
                         <h1><Link to="/" className="title-link">MY Adventure Blog</Link></h1>
@@ -42,22 +39,23 @@ class App extends React.Component {
                 <Link to="/dcp16">DCP 16</Link>
                 <input
                     type="text"
-                    onChange={this.handleChange}
-                    value={this.state.searchInput}
+                    onChange={handleChange}
+                    value={searchInput}
                     placeholder="search"
                 />
             </nav>
             <Routes>
-                <Route path="/" element={<Home posts={this.state.posts} search={this.state.searchInput} />} />
-                <Route path="/dcp15" element={<DCP15 posts={this.state.posts} search={this.state.searchInput} />} />
-                <Route path="/dcp16" element={<DCP16 posts={this.state.posts} search={this.state.searchInput} />} />
-                <Route path="/:id" element={<SinglePost posts={this.state.posts} />} />
+                <Route path="/" element={<Home posts={posts} search={searchInput} />} />
+                <Route path="/dcp15" element={<DCP15 posts={posts} search={searchInput} />} />
+                <Route path="/dcp16" element={<DCP16 posts={posts} search={searchInput} />} />
+                <Route path="/:id" element={<SinglePost posts={posts} />} />
                 <Route path="*" element={<NoPage />} />
             </Routes>
+            <footer>
+                This website was created with React.js
+            </footer>
             <ScrollToTop smooth className='scroll-to-top' />
-        </BrowserRouter >
+        </HashRouter>
     }
-
-}
 
 export default App;

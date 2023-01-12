@@ -6,7 +6,7 @@ const Post = ({ post: { url,title,date,badge, body, images } }) => {
         <div className="post-container">
             <section className="post-header">
                 <div>
-                <Link to={`post/${url}`}><img src={ badge } class="badge" alt="badge" /></Link>
+                <Link to={`/${url}`}><img src={ badge } class="badge" alt="badge" /></Link>
                 </div>
                 <div className="post-title">
                     <h2><Link to={`/${url}`}>{title}</Link></h2>

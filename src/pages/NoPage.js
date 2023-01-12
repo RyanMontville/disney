@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-const NoPage = () => {
+import notfound from "../images/badges/404.png";
+import patches from "../images/badges/patches.png";
+function NoPage() {
     return <div className="page">
         <section className="post-header">
             <div>
-                <img src="/assets/badges/404.png" class="badge" alt="badge" />
+                <img src={notfound} class="badge" alt="badge" />
             </div>
             <div className="post-title">
                 <h2>Page Not Found</h2>
@@ -20,7 +22,7 @@ const NoPage = () => {
         <p>Well, I gotta help you find something. See these? These are my Wilderness Explorer badges.
             You may notice one is missing. It's my finders badge. If I get it, I will become a Senior
             Wilderness Explorer!</p>
-            <img src="/assets/badges/patches.png" alt="" className="full"/>
+            <img src={patches} alt="" className="full"/>
     </div>;
 };
 

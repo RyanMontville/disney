@@ -1,55 +1,51 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-  
-  :root{
+  :root {
     --yellow: #fdce2a;
     --brown: #804412;
     --lightBrown: #b59e75;
     --green: #296a16;
   }
-  *{
+
+  * {
     padding: 0;
     margin: 0;
   }
+
   body {
     background-color: #f5e9dd;
+    min-height: 100vh
   }
+
   .title-link {
     color: var(--yellow);
     text-decoration: none;
   }
+
   .tag-link {
     color: black;
     text-decoration: none;
   }
+
   header {
     background-color: var(--yellow);
     padding: 10px;
     position: relative;
   }
+
   header #site-title {
     display: flex;
     align-items: center;
   }
+
   header #site-title img {
     height: 150px;
     position: relative;
     z-index: 2;
   }
+
   .site-title-text {
     margin-top: 15px;
   }
+
   header #site-title h1 {
     background-color: var(--brown);
     color: var(--yellow);
@@ -60,10 +56,12 @@ body {
     position: relative;
     z-index: 1;
   }
+
   header #site-title h2 {
     font-family: 'Gloria Hallelujah', cursive;
     text-align: center;
   }
+
   nav {
     display: flex;
     justify-content: space-around;
@@ -74,33 +72,39 @@ body {
     position: sticky;
     top: -1px;
     background-color: var(--yellow);
-    box-shadow: 0 5px 5px rgba(0,0,0,0.16);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.16);
     padding: 5px;
   }
+
   nav a {
     color: black;
     text-decoration: none;
     margin: 0 10px;
   }
+
   nav input {
-  font-size: 15px;
-  padding: 2px;
-  font-family: Roboto Slab, serif;
-  transition: background 2s;
+    font-size: 15px;
+    padding: 2px;
+    font-family: Roboto Slab, serif;
+    transition: background 2s;
   }
+
   nav a:hover {
     text-decoration: underline;
   }
+
   nav form {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   nav input[type=text] {
     padding: 6px;
     font-size: 17px;
     border: none;
   }
+
   nav input[type=submit] {
     padding: 8px;
     margin: 0 5px;
@@ -111,66 +115,84 @@ body {
     border: none;
     cursor: pointer;
   }
+
   .page {
     max-width: 900px;
     margin: 10px auto;
     background-color: #ffffff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding: 10px;
     font-family: Roboto Slab;
   }
+
   .page p {
     margin: 10px 0;
   }
+
   .page li {
     margin: 0 20px;
   }
+
   .full {
     width: 100%;
     height: auto;
     position: relative
   }
+
   .post-container {
     background-color: #ffffff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding: 10px;
     margin: 10px 0;
     font-family: Roboto Slab;
   }
+
   .post-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .post-header div.post-title {
     flex-grow: 1;
     text-align: right;
     font-family: Roboto;
   }
-  
+
   .post-header div.post-title h2,
   .post-header div.post-title h3 {
     padding-right: 10px;
   }
+
   .post-header a {
     color: black;
     text-decoration: none;
   }
-  
+
   .post-header img.badge {
     height: 100px;
     margin: 0 5px;
   }
-  
+
   .post-header hr {
     border: 2px solid var(--lightBrown);
     margin: 5px 0;
   }
+
   button.scroll-to-top {
     background-color: var(--green);
   }
-  
+
   button.scroll-to-top svg {
     fill: white;
   }
-  
+
+  footer {
+    background-color: var(--green);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+  }
