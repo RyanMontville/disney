@@ -51,9 +51,6 @@ function App() {
                 <Route path="/:id" element={<SinglePost posts={posts} />} />
                 <Route path="*" element={<NoPage />} />
             </Routes>
-            <footer>
-                My Adventure Blog was created with React.js
-            </footer>
             <ScrollToTop smooth className='scroll-to-top' />
         </HashRouter>
     }
