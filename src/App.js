@@ -33,7 +33,7 @@ function App() {
                 </section>
             </header>
             <nav>
-                <a href="https://ryanmontville.com">RyanMontville.com</a>
+                <a href="https://ryanmontville.github.io/">Ryan Montville</a>
                 <Link to="/">View All Posts</Link>
                 <Link to="/dcp15">DCP 15</Link>
                 <Link to="/dcp16">DCP 16</Link>
