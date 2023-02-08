@@ -20,22 +20,22 @@ function App() {
         setSearchInput(e.target.value)
     };
 
-        return <HashRouter>
-            <header>
-                <section id="site-title">
-                    <div>
-                        <Link to="/" className="title-link"><img src={badge} alt="badge" /></Link>
-                    </div>
-                    <div className="site-title-text">
-                        <h1><Link to="/" className="title-link">MY Adventure Blog</Link></h1>
-                        <h2><Link to="/" className="tag-link">Adventures in Disney and beyond!</Link></h2>
-                    </div>
-                </section>
-            </header>
-            <nav>
-                <input type='checkbox' id='menu-toggle'/>
-                <label for='menu-toggle'>&#9776;</label>
-                <div class="nav-links">
+    return <HashRouter>
+        <header>
+            <section id="site-title">
+                <div>
+                    <Link to="/" className="title-link"><img src={badge} alt="badge" /></Link>
+                </div>
+                <div className="site-title-text">
+                    <h1><Link to="/" className="title-link">MY Adventure Blog</Link></h1>
+                    <h2><Link to="/" className="tag-link">Adventures in Disney and beyond!</Link></h2>
+                </div>
+            </section>
+        </header>
+        <nav>
+            <input type='checkbox' id='menu-toggle' />
+            <label for='menu-toggle' class="menu-toggle-label">&#9776;</label>
+            <div class="nav-links">
                 <a href="https://ryanmontville.github.io/">Ryan Montville</a>
                 <Link to="/">View All Posts</Link>
                 <Link to="/dcp15">DCP 15</Link>
@@ -46,17 +46,17 @@ function App() {
                     value={searchInput}
                     placeholder="search"
                 />
-                </div>
-            </nav>
-            <Routes>
-                <Route path="/" element={<Home posts={posts} search={searchInput} />} />
-                <Route path="/dcp15" element={<DCP15 posts={posts} search={searchInput} />} />
-                <Route path="/dcp16" element={<DCP16 posts={posts} search={searchInput} />} />
-                <Route path="/:id" element={<SinglePost posts={posts} />} />
-                <Route path="*" element={<NoPage />} />
-            </Routes>
-            <ScrollToTop smooth className='scroll-to-top' />
-        </HashRouter>
-    }
+            </div>
+        </nav>
+        <Routes>
+            <Route path="/" element={<Home posts={posts} search={searchInput} />} />
+            <Route path="/dcp15" element={<DCP15 posts={posts} search={searchInput} />} />
+            <Route path="/dcp16" element={<DCP16 posts={posts} search={searchInput} />} />
+            <Route path="/:id" element={<SinglePost posts={posts} />} />
+            <Route path="*" element={<NoPage />} />
+        </Routes>
+        <ScrollToTop smooth className='scroll-to-top' />
+    </HashRouter>
+}
 
 export default App;
