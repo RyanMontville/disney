@@ -33,6 +33,9 @@ function App() {
                 </section>
             </header>
             <nav>
+                <input type='checkbox' id='menu-toggle'/>
+                <label for='menu-toggle'>&#9776;</label>
+                <div class="nav-links">
                 <a href="https://ryanmontville.github.io/">Ryan Montville</a>
                 <Link to="/">View All Posts</Link>
                 <Link to="/dcp15">DCP 15</Link>
@@ -43,6 +46,7 @@ function App() {
                     value={searchInput}
                     placeholder="search"
                 />
+                </div>
             </nav>
             <Routes>
                 <Route path="/" element={<Home posts={posts} search={searchInput} />} />
