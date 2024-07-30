@@ -9,6 +9,7 @@
 .pagination li {
     list-style-type: none;
     margin: 5px;
+    color: var(--body-color);
 }
 
 .pagination button {
@@ -16,6 +17,7 @@
     border: none;
     background-color: transparent;
     font-size: 20px;
+    color: var(--body-color);
 }
 .pagination .page-link:hover {
     text-decoration: underline;

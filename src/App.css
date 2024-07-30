@@ -1,9 +1,25 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --yellow: #d1a700;
+    --brown: #5a2e0c;
+    --lightBrown: #7a684c;
+    --green: #1b4710;
+    --body-background:  #1c1c1c;
+    --main-background: #333;
+    --body-color: #ccc;
+  }
+}
+@media (prefers-color-scheme: light) {
   :root {
     --yellow: #fdce2a;
     --brown: #804412;
     --lightBrown: #b59e75;
     --green: #296a16;
+    --body-background: #f5e9dd;
+    --body-color: #000;
+    --main-background: #ffffff;
   }
+}
 
   * {
     padding: 0;
@@ -11,7 +27,8 @@
   }
 
   body {
-    background-color: #f5e9dd;
+    background-color: var(--body-background);
+    color: var(--body-color);
     min-height: 100vh
   }
 
@@ -92,6 +109,8 @@
     padding: 2px;
     font-family: Roboto Slab, serif;
     transition: background 2s;
+    background-color: var(--main-background);
+    color: var(--body-color);
   }
 
   nav a:hover {
@@ -128,7 +147,7 @@
   .page {
     max-width: 900px;
     margin: 10px auto;
-    background-color: #ffffff;
+    background-color: var(--main-background);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding: 10px;
     font-family: Roboto Slab;
@@ -149,7 +168,7 @@
   }
 
   .post-container {
-    background-color: #ffffff;
+    background-color: var(--main-background);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding: 10px;
     margin: 10px 0;
@@ -174,7 +193,7 @@
   }
 
   .post-header a {
-    color: black;
+    color: var(--body-color);
     text-decoration: none;
   }
 
