@@ -275,3 +275,8 @@
       color: var(--brown);
     }
   }
+
+  .lb-container,
+  .lb-outerContainer {
+    background-color: var(--main-background);
+  }
