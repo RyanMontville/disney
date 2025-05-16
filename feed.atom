@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>My Adventure Blog</title>
+	<id>https://ryanmontville.com/disney/</id>
+	<link rel="alternate" href="https://ryanmontville.com/disney/"/>
+    <link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+	<link rel="self" href="https://ryanmontville.com/disney/feed.atom"/>
+	<updated>2025-05-15T23:04:16-04:00</updated>
+	<author>
+		<name>Ryan Montville</name>
+	</author>
+	<entry>
+		<title>Day 1: Move-in</title>
+		<link rel="alternate" type="text/html" href="https://ryanmontville.com/disney/#/day-1"/>
+		<id>https://ryanmontville.com/disney/#/day-1</id>
+		<published>2015-01-19T10:00:00+00:00</published>
+		<updated>2015-01-19T10:00:00+00:00</updated>
+		<content type="html">
+            <h2>Day 1: Move-in</h2>
+            <h3>January 19, 2015</h3>
+            <p>After a 2 day, 15 hour drive, I'm finally in Orlando. This morning I went through the check-in process which took about an hour, then moved into our apartment, and then met all 5 of my roommates: Tyler, Justin, Matt, Josh, and Alex. We're living in Chatham Square in a 3 bedroom apartment, which was our first choice and the apartment is really nice.</p>
+            <p>I also found out where I was working today. I got placed at the Columbia Harbor House in the Magic Kingdom. So I'll be serving fish and chips all day long. Tomorrow is casting. Traditions is on Friday.</p>
+        </content>
+	</entry>
+    <entry>
+		<title>Day 2: Casting</title>
+		<link rel="alternate" type="text/html" href="https://ryanmontville.com/disney/#/day-2"/>
+		<id>https://ryanmontville.com/disney/#/day-2</id>
+		<published>2015-01-20T10:00:00+00:00</published>
+		<updated>2015-01-20T10:00:00+00:00</updated>
+		<content type="html">
+            <h2>Day 2: Casting</h2>
+            <h3>January 20, 2015</h3>
+            <p>Today was casting. All of my roommates had different times than me, which is going to happen for the rest of the program since we are all working different roles. At casting they took my fingerprints and info for a background check, filled out my I-9, and got my training schedule. I have traditions Friday afternoon, and then have orientation and training for the Columbia Harbor House Sunday, Monday, and Wednesday. Later in the day we met up with some of our neighbors and went to Downtown Disney. We just walked around for awhile looking at everything. Our discounts start after Traditions, which is on Friday, so we haven't bought anything yet.</p>
+            <img src="https://ryanmontville.com/disney/static/media/jancasting.719b8716b5270eabcea9.jpg" alt="Casting Group Photo" />
+            <img src="https://ryanmontville.com/disney/static/media/jandtd.064cd99f3d8ac8249436.jpg" alt="Hanging out at Downtown Disney" />
+        </content>
+	</entry>
+</feed>
