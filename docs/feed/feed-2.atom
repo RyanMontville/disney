@@ -4,8 +4,8 @@
 <id>https://ryanmontville.com/disney/</id>
 <link rel="alternate" href="https://ryanmontville.com/disney/"/>
 <link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
-<link rel="self" href="https://ryanmontville.com/disney/feed.atom"/>
-<link rel="first" href="https://ryanmontville.com/disney/feed.atom"/>
+<link rel="self" href="https://ryanmontville.com/disney/feed-0.atom"/>
+<link rel="first" href="https://ryanmontville.com/disney/feed-0.atom"/>
 <link rel="prev-archive" href="https://ryanmontville.com/disney/feed-1.atom"/>
 <link rel="current" href="https://ryanmontville.com/disney/feed-2.atom"/>
 <link rel="next" href="https://ryanmontville.com/disney/feed-3.atom"/>
